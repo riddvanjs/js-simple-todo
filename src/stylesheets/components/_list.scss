@@ -1,0 +1,50 @@
+.list {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+
+  .list-item {
+
+    &:not(:last-child) {
+      border-bottom: 2px dashed $success !important;
+      border-top: 2px dashed $success !important;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: $nav-link-padding-x;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+
+        .circle {
+          width: 10px;
+          height: 10px;
+          position: relative;
+          flex-shrink: 0;
+
+          &::after {
+            position: absolute;
+            inset: 0;
+            content: "";
+            background-color: var(--background-color);
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .description {
+      padding: $nav-link-padding-x;
+      border-top: 1px dashed #ccc;
+    }
+  }
+}

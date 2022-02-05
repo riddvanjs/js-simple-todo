@@ -1,0 +1,44 @@
+.off-canvas {
+  background-color: $white;
+  position: fixed;
+  z-index: 1000;
+  width: 550px;
+  max-width: calc(100vw - 25%);
+  top: 0;
+  bottom: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  box-shadow: $box-shadow;
+  right: -(550px + 20px);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.25s ease;
+
+  .off-canvas-header {
+    padding: $offcanvas-padding-y $offcanvas-padding-x;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .off-canvas-body {
+    padding: $offcanvas-padding-y $offcanvas-padding-x;
+  }
+
+  &.is-active {
+    right: 0;
+  }
+}
+
+.off-canvas-content {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .off-canvas {
+    &.is-active {
+      width: 100%;
+      max-width: 100vw;
+    }
+  }
+}

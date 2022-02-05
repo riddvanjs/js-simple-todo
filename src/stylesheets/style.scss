@@ -1,0 +1,34 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "utilities/variables";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/forms";
+
+
+// 4. Include any optional Bootstrap components as you like
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/_utilities.scss";
+@import "~bootstrap/scss/utilities/api";
+
+@import "utilities/holygrail";
+@import "base/helpers";
+@import "components/list";
+@import "components/offcanvas";
+@import "components/footer";
+@import "elements/backdrop";

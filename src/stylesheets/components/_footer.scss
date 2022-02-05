@@ -1,0 +1,18 @@
+.footer {
+  height: 100px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $box-shadow;
+
+  .footer-title {
+    letter-spacing: -0.2rem;
+    > span {
+      &.number {
+        color: $primary;
+        font-size: 4rem;
+      }
+    }
+  }
+}
